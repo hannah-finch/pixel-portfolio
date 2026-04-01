@@ -1,1 +1,26 @@
 /* css for all */
+
+:root {
+  --background: #1c1c1c;
+  --dark-gray: #111111;
+
+  --font-pixel: silkscreen;
+}
+
+
+body {
+  background-color: var(--background);
+}
+
+.button {
+  background-color: var(--dark-gray);
+  padding: 10px 20px;
+  color: #ffffff;
+  font-family: var(--font-pixel);
+  border: 4px solid black;
+}
+
+.button:hover {
+  background-color: #171717;
+  cursor: pointer;
+}
