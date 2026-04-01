@@ -18,9 +18,8 @@ function HomePage() {
   const bgRef = useRef(null);
   const frontBgRef = useRef(null);
 
-  const speed = 10;
+  const speed = 5;
   const lastTimeRef = useRef(0);
-// const lastTimeRef = useRef(performance.now());
 
 const animate = (time) => {
   if (!isHolding.current) return;
