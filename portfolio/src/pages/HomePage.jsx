@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function HomePage() {
   const meIdle = "./src/assets/animations/me_idle_front.gif";
   const meItem = "./src/assets/animations/me_item_front.gif";
-  const meWalkFront = "./src/assets/animations/me_walk_front.gif";
   const meWalkRight = "./src/assets/animations/me_walk_right.gif";
   const meWalkLeft = "./src/assets/animations/me_walk_left.gif";
 
@@ -138,8 +137,6 @@ const stopMoving = () => {
 
         <img
           src={meGifSrc}
-          onMouseEnter={() => setMeGifSrc(meWalkFront)}
-          onMouseLeave={() => setMeGifSrc(meIdle)}
         />
 
         <div
