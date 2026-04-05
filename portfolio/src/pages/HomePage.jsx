@@ -194,7 +194,7 @@ function HomePage() {
 
         <h1
           style={{
-            fontSize: "8vw",
+            fontSize: "9vw",
             position: "absolute",
             top: "20px",
             width: "100%",

@@ -1,69 +1,51 @@
 import { useState } from "react";
 import projects from "../../data/projects.json";
 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProjectCard from "../components/ProjectCard";
+
 function WorkPage() {
   const [filter, setFilter] = useState("all");
-  const [selected, setSelected] = useState(null);
 
   const filtered =
     filter === "all" ? projects : projects.filter((p) => p.type === filter);
 
   return (
     <>
-          <h1
-        style={{
-          fontSize: "8vw",
-          color: "var(--light-gray)",
+      <Header></Header>
 
-        }}
-      >
-        Hannah B Finch
-      </h1>
-    <section style={{margin: '60px 10%'}}>
+      <section style={{ margin: "0 10%" }}>
+        <h1>Some things I've made:</h1>
 
+        <div style={{ display: "flex", gap: "6px", margin: "12px 0", alignItems: 'center' }}>
+          <span style={{ fontWeight: "bold" }}>Filter: &nbsp;</span>
+          {["all", "dev", "design"].map((f) => (
+            <div
+              className="filter-btn"
+              key={f}
+              onClick={() => setFilter(f)}
+              variant={filter === f ? "default" : "secondary"}
+            >
+              {f}
+            </div>
+          ))}
+        </div>
 
-      <h1>Work</h1>
-
-      <div>
-        {["all", "dev", "design"].map((f) => (
-          <button
-            key={f}
-            onClick={() => setFilter(f)}
-            variant={filter === f ? "default" : "secondary"}
-          >
-            {f.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
-      <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px'}}>
-        {filtered.map((project) => (
-          // later add clickability for projects, this is just sitting here for now
-      <div key={project.id} onClick={() => setSelected(project)}
-        style={{
-          width: "100%",
-          backgroundColor: "var(--dark-gray)",
-          border: "5px solid black",
-          padding: "20px",
-          boxSizing: "border-box",
-        }}
-      >
-        <img
-          src={project.image}
+        <div
           style={{
-            width: "100%",
-            border: "5px solid black",
-            boxSizing: "border-box",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "64px",
+            marginTop: "30px",
           }}
-        ></img>
-        <h2>{project.title}</h2>
-        <p>{project.desc}</p>
-        <span>{project.type}</span>
-      </div>
-        ))}
-      </div>
-
-    </section>
+        >
+          {filtered.map((project) => (
+            <ProjectCard p={project}></ProjectCard>
+          ))}
+        </div>
+      </section>
+      <Footer></Footer>
     </>
   );
 }

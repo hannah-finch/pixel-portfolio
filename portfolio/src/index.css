@@ -5,6 +5,7 @@
   --dark-gray: #111111;
   --mid-gray: #393939;
   --light-gray: #676767;
+  --dark-shadow: #000000bb;
 
 
   --font-pixel: silkscreen;
@@ -12,19 +13,20 @@
 
 body {
   background-color: var(--background);
-  color: var(--light-gray)
+  color: var(--light-gray);
+  font-family: quicksand;
 }
 
 h1 {
   font-family: var(--font-pixel);
   color: white;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 h2 {
   font-family: var(--font-pixel);
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .flex-row {
@@ -70,4 +72,27 @@ h2 {
 
 .icon-container:hover {
   cursor: pointer;
+}
+
+.filter-btn {
+  background-color: var(--dark-gray);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--light-gray);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  cursor: pointer;
+}
+
+.type {
+    background-color: var(--dark-gray);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  text-wrap: nowrap;
 }
