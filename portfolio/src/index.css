@@ -59,10 +59,12 @@ h2 {
 .button-2 {
   background-color: var(--accent);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 26px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px var(--darkish-shadow);
   transition: .2s;
+  opacity: .9;
+  text-wrap: nowrap;
 }
 
 .button-2:hover{

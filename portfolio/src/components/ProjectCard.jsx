@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import "./projectCard.css";
 
 function ProjectCard(props) {
   const project = props.p;
@@ -46,26 +47,10 @@ function ProjectCard(props) {
   };
 
   return (
-    <div
-      key={project.id}
-      style={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        gap: "26px",
-      }}
-    >
+    <div key={project.id}>
       {/* IMAGE CONTAINER */}
       <div
-        style={{
-          width: "100%",
-          aspectRatio: "5/4",
-          borderRadius: "20px",
-          boxShadow: "5px 5px 15px var(--dark-shadow)",
-          overflow: "hidden",
-          position: "relative",
-          marginBottom: "20px",
-        }}
+        className="image-container"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -75,39 +60,28 @@ function ProjectCard(props) {
           src={project.images[currentImage]}
           alt={project.title}
           style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
             opacity: fade ? 1 : 0,
-            transition: "opacity 0.3s ease-in-out",
           }}
         />
 
         {/* TYPE TAG */}
-        <span
-          style={{
-            position: "absolute",
-            right: "10px",
-            top: "10px",
-            backgroundColor: "var(--dark-gray)",
-            color: "white",
-            padding: "10px 20px",
-            fontWeight: "bold",
-            fontSize: "11px",
-            opacity: ".7",
-            borderRadius: "5px",
-          }}
-        >
-          {project.type}
-        </span>
+        <span className="type-tag">{project.type}</span>
 
         {/* ARROWS */}
         {project.images.length > 1 && (
           <>
-            <button onClick={prevImage} style={arrowStyle("left")}>
+            <button
+              onClick={prevImage}
+              className="arrow"
+              style={{ left: "10px" }}
+            >
               ‹
             </button>
-            <button onClick={nextImage} style={arrowStyle("right")}>
+            <button
+              onClick={nextImage}
+              className="arrow"
+              style={{ right: "10px" }}
+            >
               ›
             </button>
           </>
@@ -115,28 +89,15 @@ function ProjectCard(props) {
 
         {/* DOTS */}
         {project.images.length > 1 && (
-          <div
-            style={{
-              position: "absolute",
-              bottom: "10px",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              gap: "8px",
-            }}
-          >
+          <div className="dot-container">
             {project.images.map((_, index) => (
               <div
                 key={index}
                 onClick={() => changeImage(index)}
+                className="dot"
                 style={{
-                  width: "8px",
-                  height: "8px",
-                  borderRadius: "50%",
                   backgroundColor:
                     index === currentImage ? "white" : "#ffffff66",
-                  cursor: "pointer",
-                  transition: "all 0.2s",
                 }}
               />
             ))}
@@ -160,51 +121,34 @@ function ProjectCard(props) {
           </a>
         )}
       </div>
+      {/* text container */}
+      <div className="text-container">
+        <h2>{project.title}</h2>
 
-      <h2>{project.title}</h2>
+        <div
+          style={{
+            width: "100%",
+            border: "1px solid var(--light-gray)",
+            borderLeft: "none",
+            borderRight: "none",
+            padding: "16px 0px",
+          }}
+        >
+          <p style={{ fontSize: "14px", lineHeight: "1.2" }}>{project.desc}</p>
+        </div>
 
-      <div
-        style={{
-          width: "100%",
-          border: "1px solid var(--light-gray)",
-          borderLeft: "none",
-          borderRight: "none",
-          padding: "16px 0px",
-        }}
-      >
-        <p style={{ fontSize: "14px", lineHeight: "1.2" }}>{project.desc}</p>
-      </div>
+        <p style={{ color: "white", lineHeight: "1.5" }}>{project.details}</p>
 
-      <p style={{ color: "white", lineHeight: "1.5" }}>{project.details}</p>
-
-      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-        {project.tech.map((item, index) => (
-          <span key={index} className="tech">
-            {item}
-          </span>
-        ))}
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+          {project.tech.map((item, index) => (
+            <span key={index} className="tech">
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
-
-/* Arrow styling */
-const arrowStyle = (side) => ({
-  position: "absolute",
-  top: "50%",
-  [side]: "10px",
-  transform: "translateY(-50%)",
-  backgroundColor: "#00000080",
-  color: "white",
-  border: "none",
-  borderRadius: "50%",
-  width: "35px",
-  height: "35px",
-  cursor: "pointer",
-  fontSize: "20px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-});
 
 export default ProjectCard;
