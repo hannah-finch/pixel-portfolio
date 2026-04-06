@@ -5,7 +5,11 @@
   --dark-gray: #111111;
   --mid-gray: #393939;
   --light-gray: #676767;
+  --lighter-gray: #c2c2c2;
   --dark-shadow: #000000bb;
+  --darkish-shadow: #00000050;
+  --accent: #0f5262;
+  --accent-dark: #08364e;
 
 
   --font-pixel: silkscreen;
@@ -49,8 +53,20 @@ h2 {
 
 .button:hover {
   background-color: #171717;
-  
   cursor: pointer;
+}
+
+.button-2 {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px var(--darkish-shadow);
+  transition: .2s;
+}
+
+.button-2:hover{
+  background-color: var(--accent-dark);
 }
 
 .icon-container {
@@ -67,7 +83,6 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   box-shadow: 2px 2px 12px #000000b1;
-
 }
 
 .icon-container:hover {
@@ -78,7 +93,7 @@ h2 {
   background-color: var(--dark-gray);
   padding: 8px 12px;
   border-radius: 8px;
-  color: var(--light-gray);
+  color: var(--lighter-gray);
   font-size: 11px;
   font-weight: bold;
 }
@@ -87,11 +102,11 @@ h2 {
   cursor: pointer;
 }
 
-.type {
-    background-color: var(--dark-gray);
+.tech {
+  background-color: var(--dark-gray);
   padding: 8px 12px;
   border-radius: 8px;
-  color: white;
+  color: var(--lighter-gray);
   font-size: 11px;
   font-weight: bold;
   text-wrap: nowrap;

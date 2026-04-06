@@ -5,7 +5,7 @@
     "type": "dev",
     "desc": "A deployed full-stack e-commerce-style website showcasing products with a clean UI and server-rendered functionality.",
     "details": "This live application demonstrates a production-ready web app deployed via Render, combining front-end presentation with backend logic. It uses Node.js/Express for routing and server-side functionality, with React to render product listings and pages. The project highlights practical deployment skills, environment configuration, and full-stack integration, including handling assets, routing, form submissions, and basic commerce features. It emphasizes usability, visual design, and real-world application structure. I created this application for a young girl's handmade jewelry shop. Having a young client added extra purpose to the project, as I needed to do more than make a functioning e-commerce site, but I had to make it simple enough for my client to upkeep on her own. I created a very user-friendly admin panel (protected by authentication), where she could add and edit products, including uploading her own photos. She has absolutely loved the freedom of having her own website.",
-    "image": "src/assets/project-photos/isabelle.png",
+    "images": ["src/assets/project-photos/isabelle.png", "src/assets/project-photos/erin.png"],
     "tech": [
       "React",
       "Express.js",
@@ -15,7 +15,9 @@
       "StripeAPI",
       "MongoDB",
       "Authentication"
-    ]
+    ],
+    "btnTxt": "View the live application",
+    "btnLink": "http://isabellesbeadshop.onrender.com/"
   },
   {
     "id": 2,
@@ -23,16 +25,16 @@
     "type": "design",
     "desc": "Moody and adorable 2D pixel assets, featured on my homepage.",
     "details": "Includes tilesets, props, and animated character sprites with a grayscale palette and accent colors. There are several more sprites than pictured here, such as furniture sprites from all angles, animated animal and monster sprites, ui elements, and clothing changes for characters. I created these pixel assets for a work-in progress video game I've been coding in Unity. The game is all about growth and overcoming darkness, so I designed the assets to match the moody, but sincerely sweet vibe of the game. I've learned a lot about video game asset creation along the way, and have especially enjoyed animating the characters and animals.",
-    "image": "src/assets/project-photos/pixel-assets.png",
+    "images": ["src/assets/project-photos/pixel-assets.png"],
     "tech": ["LibreSprite"]
   },
   {
     "id": 3,
-    "title": "Book Buddies - Social Bookclub App",
+    "title": "Book Buddies - Social Book Club App",
     "type": "dev",
     "desc": "A full-stack social reading app that connects users through shared books, enabling discussion, tracking, and community engagement.",
-    "details": "Built with a modern JavaScript stack, this application focuses on creating an interactive reading community where users can log books, connect with others, and participate in discussions. It leverages Handlebars for a dynamic front-end experience and a Node.js/Express backend to manage user data and interactions. Persistent storage is handled through a database layer (PostgreSQL), with RESTful APIs enabling seamless communication between client and server. The project emphasizes component-based architecture, and user-centric design patterns for scalability and maintainability.",
-    "image": "src/assets/project-photos/book-buddies.png",
+    "details": "Built with a modern JavaScript stack, this application focuses on creating an interactive reading community where users join or create book clubs, plan club meetings, and collaborate on reading lists. It leverages Handlebars for a dynamic front-end experience and a Node.js/Express backend to manage user data and interactions. Persistent storage is handled through a database layer (PostgreSQL), with RESTful APIs enabling seamless communication between client and server. The project emphasizes component-based architecture, and user-centric design patterns for scalability and maintainability.",
+    "images": ["src/assets/project-photos/book-buddies.png"],
     "tech": ["Node.js", "Express.js", "Handlebars", "PostgreSQL", "RESTful API"]
   },
   {
@@ -40,9 +42,9 @@
     "title": "MI Harp Center - Brand Identity",
     "type": "design",
     "desc": "Logo design and typography for MI Harp Center.",
-    "details": "Clean and soft logo design and typography created for MI Harp Center in Belleville, MI.",
-    "image": "src/assets/project-photos/mi-harp-center.png",
-    "tech": ["AdobeIllustrator"]
+    "details": "Clean and soft logo design and typography created for MI Harp Center in Belleville, MI. I originally created a logo with one classical harp for my client. They returned a few years later to request an updated logo with both a classical and celtic harp that they could use at a celtic festival. I was very happy that my client enjoyed working with me enough to return for another project. The first logo was made with AdobeIllustrator, and then recreated and updated for the second logo with Inkscape.",
+    "images": ["src/assets/project-photos/mi-harp-center.png"],
+    "tech": ["AdobeIllustrator", "Inkscape"]
   },
   {
     "id": 5,
@@ -50,7 +52,7 @@
     "type": "design",
     "desc": "Full brand identity kit for Erin Home Cleaning.",
     "details": "Logo design, typography, color systems, and social templates for cohesive branding. Features bright colors and clean typography for a crisp, friendly vibe, catering toward local homeowners.",
-    "image": "src/assets/project-photos/erin.png",
+    "images": ["src/assets/project-photos/erin.png"],
     "tech": ["AdobeIllustrator"]
   },
   {
@@ -59,7 +61,7 @@
     "type": "design",
     "desc": "Custom portraits illustrated from photos for real families",
     "details": "Adorable portraits of families and their pets, created with AdobeIllustrator. I illustrated over 100 portraits, demonstrating my ability to work closely with clients, and making adjustments according to their preferences. Most were ordered as gifts for loved ones, and I received very kind feedback for my work.",
-    "image": "src/assets/project-photos/family-portraits.png",
+    "images": ["src/assets/project-photos/family-portraits.png"],
     "tech": ["AdobeIllustrator"]
   },
   {
@@ -68,7 +70,7 @@
     "type": "design",
     "desc": "Acrylic painting on canvas of grassy, sandy hills",
     "details": "details",
-    "image": "src/assets/project-photos/painting-1.png",
+    "images": ["src/assets/project-photos/painting-1.png"],
     "tech": ["Acrylic on canvas"]
   },
   {
@@ -76,9 +78,11 @@
     "title": "Poké Lounge",
     "type": "dev",
     "desc": "A Pokémon-themed web app that delivers interactive browsing and data visualization using external APIs.",
-    "details": "This project integrates real-time data from public APIs (such as the PokéAPI and Chuck Norris Jokes API) to create an engaging, responsive interface for exploring Pokémon data. Styling is handled through modern CSS techniques, while the app structure demonstrates clean separation of concerns. It highlights skills in API integration, asynchronous data fetching, dynamic rendering, and user experience design.",
-    "image": "src/assets/project-photos/poke-lounge.png",
-    "tech": ["APIs", "CSS", "HTML"]
+    "details": "This is a fun project, where users can select Pokémon, listen to some LoFi music, and hang out. This project integrates real-time data from public APIs (such as the PokéAPI and Chuck Norris Jokes API) to create an engaging, responsive interface for exploring Pokémon data. Styling is handled through modern CSS techniques, while the app structure demonstrates clean separation of concerns. It highlights skills in API integration, asynchronous data fetching, dynamic rendering, and user experience design. Drag-and-drop functionality is achieved with jQuery.",
+    "images": ["src/assets/project-photos/poke-lounge.png"],
+    "tech": ["APIs", "jQuery", "CSS", "HTML"],
+    "btnTxt": "Hang out with some Pokémon",
+    "btnLink": "https://group11projectpokemon.github.io/group-11-project-pokemon//"
   },
   {
     "id": 9,
@@ -86,7 +90,7 @@
     "type": "design",
     "desc": "Illustration of a girl looking up at the clouds for a children's book",
     "details": "details",
-    "image": "src/assets/project-photos/illustration.png",
+    "images": ["src/assets/project-photos/illustration.png"],
     "tech": ["AdobeFresco"]
   }
 ]
