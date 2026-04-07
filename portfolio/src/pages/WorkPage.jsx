@@ -35,8 +35,9 @@ function WorkPage() {
         <div
           style={{
             display: "grid",
+            // width: '800px',
             gridTemplateColumns: "1fr 1fr",
-            gap: "64px",
+            gap: "90px",
             marginTop: "30px",
           }}
         >
