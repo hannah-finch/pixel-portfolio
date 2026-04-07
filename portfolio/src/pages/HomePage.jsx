@@ -59,6 +59,7 @@ function HomePage() {
           backgroundRepeat: "repeat-x",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          imageRendering: 'pixelated'
         }}
       />
 
@@ -74,6 +75,7 @@ function HomePage() {
           backgroundRepeat: "repeat-x",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          imageRendering: 'pixelated'
         }}
       />
 
@@ -89,6 +91,7 @@ function HomePage() {
           backgroundRepeat: "repeat-x",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          imageRendering: 'pixelated'
         }}
       />
     </div>
@@ -151,6 +154,9 @@ function HomePage() {
 
   return (
     <>
+    <section style={{backgroundColor: '#1c1c1c', position: 'absolute', zIndex: '-1'}}>
+
+
       <div
         style={{
           width: "100vw",
@@ -272,6 +278,7 @@ function HomePage() {
           </Link>
         </div>
       </div>
+          </section>
     </>
   );
 }

@@ -1,31 +1,39 @@
 import { Link } from "react-router-dom";
 
+import "./header.css";
+
 function Header() {
   return (
     <>
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "50px",
-            boxShadow: "5px 5px 15px var(--dark-shadow)",
-            marginBottom: '100px'
-          }}
-        >
-          <Link to="/">
+      <section
+        style={{
+          display: "flex",
+          paddingTop: "100px",
+          justifyContent: "center",
+          height: "400px",
+          marginBottom: "-250px",
+          backgroundImage:
+            "url('/src/assets/animations/background_banner.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "50% 100%",
+          imageRendering: "pixelated",
+          width: "100%",
+          backgroundColor: "#1c1c1c",
+          zIndex: "-1",
+        }}
+      >
+        <Link to="/">
           <h1
             style={{
-              fontSize: "9vw",
-              color: "var(--dark-gray)",
-              // position: "absolute",
-              // zIndex: "-1",
+              fontSize: "72px",
+              color: "var(--light-gray)",
+              textAlign: "center",
             }}
           >
             Hannah B Finch
           </h1>
-          </Link>
-        </section>
+        </Link>
+      </section>
     </>
   );
 }

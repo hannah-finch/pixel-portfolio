@@ -15,7 +15,7 @@ function WorkPage() {
     <>
       <Header></Header>
 
-      <section style={{ margin: "0 10%" }}>
+      <section style={{ margin: "0 10%"}}>
         <h1>Some things I've made:</h1>
 
         <div style={{ display: "flex", gap: "6px", margin: "12px 0", alignItems: 'center' }}>
