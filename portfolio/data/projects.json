@@ -121,7 +121,7 @@
     "type": "design",
     "desc": "Moody and adorable 2D pixel assets, featured on my homepage.",
     "details": "Includes tilesets, props, and animated character sprites with a grayscale palette and accent colors. There are several more sprites than pictured here, such as furniture sprites from all angles, animated animal and monster sprites, ui elements, and clothing changes for characters. I created these pixel assets for a work-in progress video game I've been coding in Unity. The game is all about growth and overcoming darkness, so I designed the assets to match the moody, but sincerely sweet vibe of the game. I've learned a lot about video game asset creation along the way, and have especially enjoyed animating the characters and animals.",
-    "images": ["./project-photos/pixel-assets.png"],
+    "images": ["/project-photos/pixel-assets.png"],
     "tech": ["LibreSprite"]
   }
 ]
