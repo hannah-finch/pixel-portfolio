@@ -161,6 +161,7 @@ function HomePage() {
         style={{
           width: "100vw",
           height: "100vh",
+          height: '100dvh',
           overflow: "hidden",
           position: "relative",
           display: "flex",
@@ -267,13 +268,14 @@ function HomePage() {
               &gt;
             </div>
           </div>
-          <Link to="/work">
+          <Link to="/work" >
             <div
               className="button"
               onMouseEnter={() => setMeGifSrc(meItem)}
               onMouseLeave={() => setMeGifSrc(meIdle)}
+              
             >
-              Look what I made!
+              See more things I made
             </div>
           </Link>
         </div>

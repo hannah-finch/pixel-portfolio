@@ -8,10 +8,11 @@ function Header() {
       <section
         style={{
           display: "flex",
-          paddingTop: "100px",
+          paddingTop: "8vw",
           justifyContent: "center",
+          // alignItems: 'flex-start',
           height: "400px",
-          marginBottom: "-250px",
+          marginBottom: "-220px",
           backgroundImage:
             "url('/animations/background_banner.png')",
           backgroundSize: "cover",

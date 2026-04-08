@@ -32,14 +32,7 @@ function WorkPage() {
           ))}
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            // width: '800px',
-            gridTemplateColumns: "1fr 1fr",
-            gap: "90px",
-            marginTop: "30px",
-          }}
+        <div className="project-grid"
         >
           {filtered.map((project) => (
             <ProjectCard p={project}></ProjectCard>
