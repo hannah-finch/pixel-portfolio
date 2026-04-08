@@ -16,7 +16,7 @@ function Footer() {
 
           <Link to="/">
           <img
-            src="../../public/animations/me_computer.gif"
+            src="/animations/me_computer.gif"
             style={{ width: "200px"}}
           ></img>
           </Link>

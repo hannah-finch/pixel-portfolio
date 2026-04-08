@@ -13,7 +13,7 @@ function Header() {
           height: "400px",
           marginBottom: "-250px",
           backgroundImage:
-            "url('../../public/animations/background_banner.png')",
+            "url('/animations/background_banner.png')",
           backgroundSize: "cover",
           backgroundPosition: "50% 100%",
           imageRendering: "pixelated",

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   // Assets
-  const meIdle = "../../public/animations/me_idle_front.gif";
-  const meItem = "../../public/animations/me_item_front.gif";
-  const meWalkRight = "../../public/animations/me_walk_right.gif";
-  const meWalkLeft = "../../public/animations/me_walk_left.gif";
+  const meIdle = "/animations/me_idle_front.gif";
+  const meItem = "/animations/me_item_front.gif";
+  const meWalkRight = "/animations/me_walk_right.gif";
+  const meWalkLeft = "/animations/me_walk_left.gif";
 
   const [meGifSrc, setMeGifSrc] = useState(meIdle);
 
@@ -28,10 +28,10 @@ function HomePage() {
   const IMAGE_WIDTH = 4864; // width in pixels of the actual background images, super important for tiling
 
   // Background image assets
-  const bgImg = "../../public/animations/background_back.png";
-  const midImg = "../../public/animations/background.png";
-  const fgImg = "../../public/animations/background_front.gif";
-  const ffgImg = "../../public/animations/background_frontfront.gif";
+  const bgImg = "/animations/background_back.png";
+  const midImg = "/animations/background.png";
+  const fgImg = "/animations/background_front.gif";
+  const ffgImg = "/animations/background_frontfront.gif";
 
   const createLayer = (ref, img, zIndex) => (
     <div
