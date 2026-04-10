@@ -23,8 +23,8 @@
     "id": 2,
     "title": "Flip Plan - Drawing Planner App",
     "type": "design",
-    "desc": "Description",
-    "details": "details",
+    "desc": "Complete UI design concept for a drawing-focused planner app",
+    "details": "This app was inspired by bullet-journaling. I have been using my own bullet-journal for many years, and I wanted to make a digital version. In 'plan' mode, users can write out plans and journal entries, make charts and graphs on their own or with templates, set reminders, and add sticky notes and stickers to their pages. They can listen to music while planning with Spotify integration. They can also link files and add photos. Switching the app to 'flip' mode removes the graph paper background, hides the journaling tools, and allows the user to swipe through their virtual journals, like you would flip through a physical journal.",
     "images": [
       "/project-photos/flip-plan-1.png",
       "/project-photos/flip-plan-2.png",
@@ -75,7 +75,7 @@
     "title": "Look at the clouds - Illustration",
     "type": "design",
     "desc": "Illustration of a girl looking up at the clouds for a children's book",
-    "details": "details",
+    "details": "This is an illustration I was asked to make for a children's book. I designed the character from descriptions of her personality in the book, and used AdobeFresco to illustrate her, in order to achieve a hand-drawn, colored pencil look. In this illustration, the main character lays in the grass surrounded by wildflowers and looks up at the clouds.",
     "images": ["/project-photos/illustration.png"],
     "tech": ["AdobeFresco"]
   },

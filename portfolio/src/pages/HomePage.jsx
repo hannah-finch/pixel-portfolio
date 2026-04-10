@@ -25,7 +25,7 @@ function HomePage() {
   const ffgRef = useRef(null);
 
   const speed = 400; // pixels per second
-  const IMAGE_WIDTH = 4864; // width in pixels of the actual background images, super important for tiling
+  const IMAGE_WIDTH = 4864; // width in pixels of the actual background images, super important for tiling, BUT I think it still has to be much wider than the screen width, so I did 4x's the image width... look into that later cause if I can make this number smaller, it will run better
 
   // Background image assets
   const bgImg = "/animations/background_back.png";
