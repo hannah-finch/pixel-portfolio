@@ -83,8 +83,8 @@
     "id": 8,
     "title": "Neumorphism - Front End Design",
     "type": "dev",
-    "desc": "Description",
-    "details": "details",
+    "desc": "Website design inspired by neumorphism",
+    "details": "Neumorphism is a UI design style that layers shadows and highlight effects to achieve a minimalistic, 3D effect on soft, monochromatic colors with low contrast. I designed and coded this website as an exercise in neumorphic style. I created several components so the effect could be achieved simply as the website scales.",
     "images": ["/project-photos/neumorphism.png"],
     "tech": ["React", "CSS"]
   },
@@ -101,8 +101,8 @@
     "id": 10,
     "title": "Our Service Dogs - Book Title Design",
     "type": "design",
-    "desc": "Description",
-    "details": "details",
+    "desc": "Typography for a children's book, Our Service Dogs, by Amber Diane Hill",
+    "details": "The book, Our Service Dogs is written from the perspective of a young girl teaching about service dogs and the jobs they do. A few pages of the book are illustrated so they appear to be written straight from the girl's notebook, in her handwriting. When designing the title, I wanted to carry over that colored-pencil, hand drawn look. I used a green color that frequents the illustrations in the book, and used AdobeFresco to achieve the hand-drawn look.",
     "images": ["/project-photos/service-dogs-1.png"],
     "tech": ["AdobeFresco"]
   },
@@ -111,7 +111,7 @@
     "title": "Hills of grass and sand - Painting",
     "type": "design",
     "desc": "Acrylic painting on canvas of grassy, sandy hills",
-    "details": "details",
+    "details": "This painting is an example of the work I am able to do with physical mediums. I have painted many expressionist style paintings, and typically prefer using gouache on watercolor paper. This painting was done with acrylic paint on canvas.",
     "images": ["/project-photos/painting-1.png"],
     "tech": ["Acrylic on canvas"]
   },
